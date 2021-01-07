@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML cheatsheet</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+
+    <!-- HEADER SECTION -->
+
+
+
+    <nav class="header">
+        <SPAN class="logo">by Codey Bench</SPAN>
+        <ul>
+            <li>
+                <a href="/index.html"><h2>Home</h2></a>
+            </li>
+            <li>
+                <a href="/html-page.html" target="_blank"><h2>HTML</h2></a>
+            </li>
+            <li>
+                <a href="" target="_blank"><h2>CSS</h2></a>
+            </li>
+            <li>
+                <a href="" target="_blank"><h2>Notes</h2></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN SECTION -->
+    <hr>
+    <h1>HTML elements cheatsheet</h1>
+    <hr>
+
+    <!-- TABLE MAIn -->
+
+
+    <h2>Main & Sectioning</h2>
+
+    <table>
+        <thead class="head">
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="column-one"> 
+                   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">&lthtml></a>
+                </td>                
+                <td>
+                    The HTML &lthtml> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. 
+                    All other elements must be descendants of this element.
+                </td>
+                <td rowspan="2">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">Global attributes</a>
+                </td>
+                <td rowspan="2">
+                    Global attributes are attributes common to all HTML elements; they can be used on all elements.
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank">&ltbody></a>
+                </td>                
+                <td>The HTML &ltbody> Element represents the content of an HTML document. There can be only one &ltbody> element in a document.</td>
+                             
+            </tr>            
+        </tbody>
+    </table>
+
+
+    <!-- TABLE Document metadata -->
+    <!--  -->
+
+
+    <h2>Document metadata</h2>
+
+    <table>
+        <thead class="head">
+            <tr>               <!-- Head of table -->
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>                         <!-- 1st row BASE -->
+                <td class="column-one" rowspan="2">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank">&ltbase></a>
+                </td>
+                <td rowspan="2">The HTML &ltbase> element specifies the base URL to use for all relative URLs in a document.</td>
+                <td>href</td>
+                <td>The base URL to be used throughout the document for relative URLs. Absolute and relative URLs are allowed.</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>A keyword or author-defined name of the default browsing context to show the results of navigation from &lta>, &ltarea>,
+                     or &ltform> elements without explicit target attributes.</td>
+            </tr>
+            <tr>                           <!--2nd row HEAD -->
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">&lthead></a>
+                </td>
+                <td>The HTML &lthead> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">Global attributes</a>
+                </td>
+                <td>
+                    Global attributes are attributes common to all HTML elements; they can be used on all elements.
+                </td>
+            </tr>
+            <tr>                           <!-- 3rd row LINK -->
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">&ltlink></a>
+                </td>
+                <td>The HTML External Resource Link element (&ltlink>) specifies relationships between the current document and an external resource. 
+                    This element is most commonly used to link to CSS, 
+                    but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.</td>
+                <td>as, crossorigin, anonymous, use-credentials, disabled, href, etc</td>
+                <td> + global attributes</td>
+            </tr>
+            <tr>                            <!-- 4th row META  -->
+                <td class="column-one" rowspan="4">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">&ltmeta></a>
+                </td>
+                <td rowspan="4">The HTML &ltmeta> element represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title.</td>
+                <td>charset</td>
+                <td>
+                    This attribute declares the document's character encoding. If the attribute is present, its value must be an ASCII case-insensitive match for the string "utf-8", 
+                    because UTF-8 is the only valid encoding for HTML5 documents.
+                    meta elements which declare a character encoding must be located entirely within the first 1024 bytes of the document.
+                </td>
+            </tr>
+            <tr>
+                <td>content</td>
+                <td>This attribute contains the value for the http-equiv or name attribute, depending on which is used.</td>
+            </tr>
+            <tr>
+                <td>http-equiv</td>
+                <td>
+                    Defines a pragma directive. The attribute is named http-equiv(alent) because all the allowed values are names of particular HTTP headers
+                </td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>The name and content attributes can be used together to provide document metadata in terms of name-value pairs, 
+                    with the name attribute giving the metadata name, and the content attribute giving the value.</td>
+            </tr>
+            <tr>                              <!-- 5th row STYLE  -->
+                <td class="column-one" rowspan="4">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">&ltstyle></a>
+                </td>
+                <td rowspan="4">The HTML &ltmeta> element represents Metadata that cannot be represented by other HTML meta-related elements, like base, link, script, style or title.</td>
+                <td>type</td>
+                <td>This attribute defines the styling language as a MIME type (charset should not be specified). 
+                    This attribute is optional and defaults to text/css if it is not specified; values other than the empty string or text/css are not used. 
+                    Note: There is very little reason to include this attribute in modern web documents.</td>
+            </tr>
+            <tr>
+                <td>media</td>
+                <td>This attribute defines which media the style should be applied to. Its value is a media query, which defaults to "all" if the attribute is missing.</td>
+            </tr>
+            <tr>
+                <td>nonce</td>
+                <td>A cryptographic nonce (number used once) used to whitelist inline styles in a style-src Content-Security-Policy. 
+                    The server must generate a unique nonce value each time it transmits a policy. 
+                    It is critical to provide a nonce that cannot be guessed as bypassing a resource’s policy is otherwise trivial.
+                </td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>This attribute specifies alternative style sheet sets.</td>
+            </tr>
+            <tr>                                  <!-- 6th row TITLE  -->
+                <td class="column-one">
+                    <a href="" target="_blank">&lttitle></a>
+                </td>
+                <td>The HTML Title element (&lttitle>) defines the  document's title that is shown in a Browser's title bar or a page's tab.</td>
+                <td>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">Global attributes</a>
+                </td>
+                <td>
+                    Global attributes are attributes common to all HTML elements; they can be used on all elements.
+                </td>
+            </tr>            
+        </tbody>
+    </table>
+    
+
+    <!-- Table Content sectioning -->
+
+
+    <h2>Content sectioning</h2>
+
+    <table>
+        <thead class="head">
+            <tr>               <!-- Head of table -->
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Attributes</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">&ltadress>
+                    </td>
+                <td></td>
+                <td rowspan="10">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">Global attributes</a>
+                </td>
+                </td>
+                <td rowspan="10">
+                    Global attributes are attributes common to all HTML elements; they can be used on all elements.
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">  &ltarticle></a>
+                </td>
+                <td>
+                    The HTML &ltarticle> element represents a self-contained composition 
+                    in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">  &ltaside></a>
+                </td>
+                </td>
+                <td>
+                    The HTML &ltaside> element represents a portion of a document whose content is only indirectly related to the document's main content.
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">  &ltfooter></a>
+                </td>
+                </td>
+                <td>
+                    The HTML &ltfooter> element represents a footer for its nearest sectioning content or sectioning root element. 
+                    A footer typically contains information about the author of the section, copyright data or links to related documents.                    
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">  &ltheader></a>
+                </td>
+                </td>
+                <td>
+                    The HTML &ltheader> element represents introductory content, typically a group of introductory or navigational aids. 
+                    It may contain some heading elements but also a logo, a search form, an author name, and other elements.                    
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">  &lth1> - &lth6></a>
+                </td>
+                </td>
+                <td> 
+                    The HTML &lth1>–&lth6> elements represent six levels of section headings. &lth1> is the highest section level and &lth6> is the lowest.                   
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">  &lthgroup></a>
+                </td>
+                </td>
+                <td>  
+                    The HTML &lthgroup> element represents a multi-level heading for a section of a document. It groups a set of &lth1> – &lth6> elements.                 
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">  &ltmain></a>
+                </td>
+                </td>
+                <td>  
+                    The HTML &ltmain> element represents the dominant content of the body of a document. 
+                    The main content area consists of content that is directly related to or expands upon the central topic of a document, 
+                    or the central functionality of an application.                  
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">    &ltnav></a>
+                </td>
+                </td>
+                <td>  
+                    The HTML &ltnav> element represents a section of a page whose purpose is to provide navigation links, 
+                    either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.                  
+                </td>
+            </tr>
+            <tr>
+                <td class="column-one">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">  &ltsection></a>
+                </td>
+                </td>
+                <td>  
+                    The HTML &ltsection> element represents a standalone section — which doesn't have a more specific semantic element to represent it — 
+                    contained within an HTML document.                
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+
+<footer class="footer">
+    <ul>
+        <li>
+            <a href="index.html"><h2>Home</h2></a>
+        </li>
+        <li>
+            <a href="html\html-page.html" target="_blank"><h2>HTML</h2></a>
+        </li>
+        <li>
+            <a href="css\css-page.html" target="_blank"><h2>CSS</h2></a>
+        </li>
+        <li>
+            <a href="theory/theory-page.html" target="_blank"><h2>Notes</h2></a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+
+</html>
